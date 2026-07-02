@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>POP STYLE - Collectible Store</title>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    color:#222;
+}
+
+
+/* HEADER */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:white;
+    position:sticky;
+    top:0;
+    border-bottom:1px solid #ddd;
+    z-index:10;
+}
+
+
+.logo{
+    font-size:32px;
+    font-weight:900;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin:0 15px;
+    font-size:17px;
+}
+
+/* HERO */
+
+.hero{
+
+    height:500px;
+    background:linear-gradient(
+        120deg,
+        #ffd6e7,
+        #fff0f5
+    );
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+}
+
+
+.hero h1{
+
+    font-size:55px;
+    margin-bottom:20px;
+
+}
+
+
+.hero p{
+
+    font-size:22px;
+
+}
+
+
+.hero button{
+
+    margin-top:25px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#111;
+    color:white;
+    font-size:18px;
+
+}
+
+
+.hero button:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* CATEGORY */
+
+
+.category{
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+
+
+.category h2{
+
+    font-size:35px;
+
+}
+
+
+
+.category-box{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+
+}
+
+
+
+.category-card{
+
+    width:180px;
+    padding:30px;
+    background:#f5f5f5;
+    border-radius:20px;
+    font-size:20px;
+
+}
+
+
+
+.category-card:hover{
+
+    background:#ffd6e7;
+    transform:translateY(-10px);
+
+}
+
+
+
+/* PRODUCTS */
+
+
+.products{
+
+    padding:50px;
+
+}
+
+
+.products h2{
+
+    text-align:center;
+    font-size:35px;
+
+}
+
+
+
+.product-list{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+
+}
+
+
+
+.product{
+
+    width:250px;
+    background:white;
+    box-shadow:0 5px 20px #ccc;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+
+}
+
+
+.product img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+
+}
+
+
+
+.product h3{
+
+    margin:15px;
+
+}
+
+
+
+.price{
+
+    color:#ff4081;
+    font-size:20px;
+    font-weight:bold;
+
+}
+
+
+
+.product button{
+
+    margin-top:15px;
+    padding:10px 30px;
+    background:#111;
+    color:white;
+    border:none;
+    border-radius:20px;
+
+}
+
+
+.product button:hover{
+
+    background:#ff4081;
+
+}
+
+
+
+/* SALE */
+
+
+.sale{
+
+    margin:40px;
+    padding:50px;
+    background:#111;
+    color:white;
+    text-align:center;
+    border-radius:25px;
+
+}
+
+
+.sale h1{
+
+    font-size:40px;
+
+}
+
+
+/* FOOTER */
+
+
+footer{
+
+    background:#222;
+    color:white;
+    padding:40px;
+    text-align:center;
+
+}
+
+
+footer p{
+
+    margin:10px;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+POP STYLE
+</div>
+
+
+<nav class="w3-bar w3-pink w3-animate-zoom">
+
+<a href="BlindBOx.html">Home</a>
+<a href="Shop.html">Shop</a>
+<a href="New.html">New</a>
+<a href="Collection.html">Collections</a>
+<a href="Contact.html">Contact</a>
+
+</nav>
+
+
+<input class="search" placeholder="Search...">
+
+
+</header>
+
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+<h1>
+Collect Your Happiness
+</h1>
+
+
+<p>
+Cute figures, blind boxes and limited collections
+</p>
+
+
+<button>
+Shop Now
+</button>
+
+
+</div>
+
+
+</section>
+
+<section class="products">
+
+
+<h2>
+Featured Products
+</h2>
+
+
+
+<div class="product-list">
+
+
+
+<div class="product">
+
+<img src="chinese.jpeg">
+
+<h3>
+Chineses Traditional
+</h3>
+
+<p class="price">
+150k
+</p>
+
+<button>
+Add Cart
+</button>
+
+</div>
+
+
+
+
+
+<div class="product">
+
+<img src="Dumplings.jpeg">
+
+<h3>
+Dumplings
+</h3>
+
+<p class="price">
+200k
+</p>
+
+<button>
+Add Cart
+</button>
+
+</div>
+
+
+
+
+
+<div class="product">
+
+<img src="itachi.jpeg">
+
+<h3>
+Special Figure
+</h3>
+
+<p class="price">
+300k
+</p>
+
+<button>
+Add Cart
+</button>
+
+</div>
+
+
+
+
+
+<div class="product">
+
+<img src="LABUBU the monsters x coca-cola.jpeg">
+
+<h3>
+Dream Collection
+</h3>
+
+<p class="price">
+200k
+</p>
+
+<button>
+Add Cart
+</button>
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="sale">
+
+<h1>
+New Collection Available
+</h1>
+
+<p>
+Explore new characters today!
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+
+<h2>
+POP STYLE
+</h2>
+
+
+<p>
+Collect • Discover • Enjoy
+</p>
+
+
+<p>
+© 2026 POP STYLE Store
+</p>
+
+
+</footer>
+
+
+
+</body>
+</html>
